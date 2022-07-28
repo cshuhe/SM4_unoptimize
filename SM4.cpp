@@ -1,9 +1,7 @@
 #include "SM4.h"
 #include<iostream>
-#include<thread>
 #include <windows.h>
 #include <cstdlib> 
-#include <ctime>
 using namespace std;
 class TimeCounter {
 public:
@@ -172,7 +170,5 @@ int SM4_Test() {
 }
 
 int main() {
-	for (int i = 0; i < 10; i++) {
-		SM4_Test();
-	}
+	SM4_Test();
 }
